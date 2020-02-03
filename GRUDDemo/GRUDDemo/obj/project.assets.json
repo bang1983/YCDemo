@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "GRUD.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/GRUD.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GRUD.Models.dll": {}
+        }
+      },
+      "GRUD.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/GRUD.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GRUD.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GRUD.Models/1.0.0": {
+      "type": "project",
+      "path": "../GRUD.Models/GRUD.Models.csproj",
+      "msbuildProject": "../GRUD.Models/GRUD.Models.csproj"
+    },
+    "GRUD.Services/1.0.0": {
+      "type": "project",
+      "path": "../GRUD.Services/GRUD.Services.csproj",
+      "msbuildProject": "../GRUD.Services/GRUD.Services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "GRUD.Models >= 1.0.0",
+      "GRUD.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Bang\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUDDemo\\GRUDDemo.csproj",
+      "projectName": "GRUDDemo",
+      "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUDDemo\\GRUDDemo.csproj",
+      "packagesPath": "C:\\Users\\Bang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUDDemo\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Bang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj": {
+              "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj"
+            },
+            "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj": {
+              "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
