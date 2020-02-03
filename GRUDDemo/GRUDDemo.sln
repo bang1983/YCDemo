@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUDDemo", "GRUDDemo\GRUDDemo.csproj", "{29BF48D5-5F8E-4353-BF3F-745AFAB8EC45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUD.Models", "GRUD.Models\GRUD.Models.csproj", "{43DE2B47-A069-4E55-B802-DCBD371A3FFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUDDemo.Models", "GRUD.Models\GRUDDemo.Models.csproj", "{43DE2B47-A069-4E55-B802-DCBD371A3FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUD.Services", "GRUD.Services\GRUD.Services.csproj", "{EA00AFE9-7340-4538-980E-0BD334AFCBD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRUDDemo.Services", "GRUD.Services\GRUDDemo.Services.csproj", "{EA00AFE9-7340-4538-980E-0BD334AFCBD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

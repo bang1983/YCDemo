@@ -1,0 +1,7 @@
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\bin\Debug\netcoreapp3.1\GRUDDemo.Models.deps.json
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\bin\Debug\netcoreapp3.1\GRUDDemo.Models.dll
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\bin\Debug\netcoreapp3.1\GRUDDemo.Models.pdb
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\obj\Debug\netcoreapp3.1\GRUDDemo.Models.AssemblyInfoInputs.cache
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\obj\Debug\netcoreapp3.1\GRUDDemo.Models.AssemblyInfo.cs
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\obj\Debug\netcoreapp3.1\GRUDDemo.Models.dll
+C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Models\obj\Debug\netcoreapp3.1\GRUDDemo.Models.pdb

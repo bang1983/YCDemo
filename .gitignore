@@ -4,3 +4,5 @@
 
 /.vs/slnx.sqlite
 /GRUDDemo/.vs/GRUDDemo/v16/Server/sqlite3/db.lock
+/GRUDDemo/YCDemo.mdf
+/GRUDDemo/YCDemo_log.ldf

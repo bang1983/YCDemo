@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj",
-      "projectName": "GRUD.Services",
-      "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj",
+      "projectName": "GRUDDemo.Services",
+      "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj",
       "packagesPath": "C:\\Users\\Bang\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\obj\\",
       "projectStyle": "PackageReference",

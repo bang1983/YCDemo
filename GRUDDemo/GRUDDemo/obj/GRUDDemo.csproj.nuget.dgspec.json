@@ -4,12 +4,12 @@
     "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUDDemo\\GRUDDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj": {
+    "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj",
-        "projectName": "GRUD.Models",
-        "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj",
+        "projectName": "GRUDDemo.Models",
+        "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj",
         "packagesPath": "C:\\Users\\Bang\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\obj\\",
         "projectStyle": "PackageReference",
@@ -40,6 +40,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,12 +69,12 @@
         }
       }
     },
-    "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj": {
+    "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj",
-        "projectName": "GRUD.Services",
-        "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj",
+        "projectName": "GRUDDemo.Services",
+        "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj",
         "packagesPath": "C:\\Users\\Bang\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\obj\\",
         "projectStyle": "PackageReference",
@@ -140,11 +150,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj": {
-                "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUD.Models.csproj"
+              "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj": {
+                "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj"
               },
-              "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj": {
-                "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUD.Services.csproj"
+              "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj": {
+                "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Services\\GRUDDemo.Services.csproj"
               }
             }
           }

@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GRUD.Models\GRUD.Models.csproj" />
-    <ProjectReference Include="..\GRUD.Services\GRUD.Services.csproj" />
+    <ProjectReference Include="..\GRUD.Models\GRUDDemo.Models.csproj" />
+    <ProjectReference Include="..\GRUD.Services\GRUDDemo.Services.csproj" />
   </ItemGroup>
 
 
