@@ -31,12 +31,16 @@
             </div>
             <div class="form-group">
                 <label asp-for="DemoCode.CreateUser" class="control-label"></label>
-                <input asp-for="DemoCode.CreateUser" class="form-control" />
+                <select asp-for="DemoCode.CreateUser"
+                        asp-items="Html.GetEnumSelectList<GRUDDemo.Models.Users>()"
+                        class="form-control">
+                    <option selected value="">請選擇...</option>
+                </select>
                 <span asp-validation-for="DemoCode.CreateUser" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DemoCode.CreateDate" class="control-label"></label>
-                <input asp-for="DemoCode.CreateDate" class="form-control" />
+                <input type="date" asp-for="DemoCode.CreateDate" class="form-control" />
                 <span asp-validation-for="DemoCode.CreateDate" class="text-danger"></span>
             </div>
             <div class="form-group">

@@ -35,6 +35,13 @@ namespace GRUDDemo
                 return Page();
             }
 
+            //檢查同日期是否已有資料，若是顯示日期重複
+            if (_context.DemoCode.Any(o => o.Code == DemoCode.Code))
+            {
+                ModelState.AddModelError("DemoCode.Code", "代碼已存在");
+                return Page();
+            }
+
             _context.DemoCode.Add(DemoCode);
             await _context.SaveChangesAsync();
 
