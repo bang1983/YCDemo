@@ -25,8 +25,8 @@ namespace GRUDDemo
         public void ConfigureServices(IServiceCollection services)
         {
 
- 
-                //註冊 DB Context，指定使用 SQL 資料庫
+
+            //註冊 DB Context，指定使用 SQL 資料庫
             services.AddDbContextPool<DemoDBContext>(options =>
             {
                 //TODO: 實際應用時連線字串不該寫死，應移入設定檔並加密儲存
@@ -38,8 +38,16 @@ namespace GRUDDemo
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DemoDBContext dbContext)
         {
+
+            //檢查資料表是否已經存在，若不存在自動建立；若資料表存在但版本太舊符則自動更新。
+            //並且限定只有LocalDB才能執行
+            if (dbContext.Database.GetDbConnection().ConnectionString.Contains("MSSQLLocalDB"))
+            {
+                dbContext.Database.Migrate();
+            }
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

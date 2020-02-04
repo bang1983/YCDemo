@@ -1,7 +1,6 @@
 C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\bin\Debug\netcoreapp3.1\GRUDDemo.Services.deps.json
 C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\bin\Debug\netcoreapp3.1\GRUDDemo.Services.dll
 C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\bin\Debug\netcoreapp3.1\GRUDDemo.Services.pdb
-C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\obj\Debug\netcoreapp3.1\GRUDDemo.Services.csprojAssemblyReference.cache
 C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\obj\Debug\netcoreapp3.1\GRUDDemo.Services.AssemblyInfoInputs.cache
 C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\obj\Debug\netcoreapp3.1\GRUDDemo.Services.AssemblyInfo.cs
 C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\GRUD.Services\obj\Debug\netcoreapp3.1\GRUDDemo.Services.dll

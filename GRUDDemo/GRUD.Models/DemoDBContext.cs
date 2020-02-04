@@ -2,9 +2,12 @@
 
 namespace GRUDDemo.Models
 {
-    public class DemoDBContext : DbContext
+    /// <summary>
+    /// 資料庫容器
+    /// </summary>
+    public partial class DemoDBContext : DbContext
     {
-        public DbSet<DemoCode> Codes { get; set; }
+        public virtual DbSet<DemoCode> DemoCode { get; set; }
 
         public DemoDBContext(DbContextOptions options) : base(options)
         {
@@ -14,8 +17,22 @@ namespace GRUDDemo.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //代碼 Unique Index
-            modelBuilder.Entity<DemoCode>()
-                .HasIndex(o => o.Code).IsUnique();
+            //modelBuilder.Entity<DemoCode>()
+            //    .HasIndex(o => o.Code).IsUnique();
+
+            modelBuilder.Entity<DemoCode>(entity =>
+            {
+                entity.HasIndex(e => e.Code)
+                    .HasName("UX_DemoCode")
+                    .IsUnique();
+
+                entity.Property(e => e.ID).HasDefaultValueSql("(newid())");
+ 
+            });
+
+            OnModelCreatingPartial(modelBuilder);
         }
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

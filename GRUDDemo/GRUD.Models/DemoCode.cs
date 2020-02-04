@@ -10,9 +10,15 @@ namespace GRUDDemo.Models
     public class DemoCode
     {
         /// <summary>
+        /// ID
+        /// </summary>
+        [Key] 
+        public Guid ID { get; set; }
+
+        /// <summary>
         /// 代碼
         /// </summary>
-        [Key]
+        [Required]
         [MaxLength(5)]
         public String Code { get; set; }
 
@@ -26,6 +32,7 @@ namespace GRUDDemo.Models
         /// <summary>
         /// 備註
         /// </summary> 
+        [MaxLength(200)]
         public string Remark { get; set; }
 
         /// <summary>
