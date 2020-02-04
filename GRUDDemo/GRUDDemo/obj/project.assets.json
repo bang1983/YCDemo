@@ -2735,6 +2735,9 @@
       "GRUDDemo.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "GRUDDemo.Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/GRUDDemo.Services.dll": {}
         },

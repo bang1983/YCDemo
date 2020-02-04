@@ -2351,6 +2351,9 @@
         }
       },
       "GRUDDemo.Services/1.0.0": {
+        "dependencies": {
+          "GRUDDemo.Models": "1.0.0"
+        },
         "runtime": {
           "GRUDDemo.Services.dll": {}
         },

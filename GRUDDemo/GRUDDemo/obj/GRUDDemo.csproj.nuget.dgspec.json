@@ -100,7 +100,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj": {
+                "projectPath": "C:\\Users\\Bang\\source\\repos\\bang1983\\YCDemo\\GRUDDemo\\GRUD.Models\\GRUDDemo.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

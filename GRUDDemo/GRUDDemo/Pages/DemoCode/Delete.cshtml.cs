@@ -6,16 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using GRUDDemo.Models;
+using GRUDDemo.Services;
 
 namespace GRUDDemo
 {
     public class DeleteModel : PageModel
     {
-        private readonly GRUDDemo.Models.DemoDBContext _context;
+        private readonly IDemoCodeService _demoCodeService;
 
-        public DeleteModel(GRUDDemo.Models.DemoDBContext context)
+        public DeleteModel(IDemoCodeService demoCodeService)
         {
-            _context = context;
+
+            _demoCodeService = demoCodeService;
         }
 
         [BindProperty]
@@ -28,7 +30,7 @@ namespace GRUDDemo
                 return NotFound();
             }
 
-            DemoCode = await _context.DemoCode.FirstOrDefaultAsync(m => m.ID == id);
+            DemoCode = _demoCodeService.Get(id.Value);
 
             if (DemoCode == null)
             {
@@ -37,19 +39,18 @@ namespace GRUDDemo
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(Guid? id)
+        public IActionResult OnPostAsync(Guid? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            DemoCode = await _context.DemoCode.FindAsync(id);
+            DemoCode = _demoCodeService.Get(id.Value);
 
             if (DemoCode != null)
             {
-                _context.DemoCode.Remove(DemoCode);
-                await _context.SaveChangesAsync();
+                _demoCodeService.Delete(DemoCode);
             }
 
             return RedirectToPage("./Index");

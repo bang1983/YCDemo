@@ -19,7 +19,7 @@ namespace GRUDDemo.Pages
 
         public void OnGet()
         {
-
+            Redirect("./DemoCode/Index");
         }
     }
 }

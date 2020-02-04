@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using GRUDDemo.Models;
+using GRUDDemo.Services;
 
 namespace GRUDDemo
 {
@@ -33,6 +34,27 @@ namespace GRUDDemo
                 options.UseSqlServer(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Bang\source\repos\bang1983\YCDemo\GRUDDemo\YCDemo.mdf; Integrated Security = True; Connect Timeout = 30");
             });
 
+
+            /* 
+			 * services.AddTransient 每次注入時都重新產生一個新的物件
+			 * services.AddScoped 每個Request的第一次注入時都重新產生一個新的物件，直到Request結束
+			 * services.AddSingleton 程式運行期間只會有一個物件
+			 */
+
+            //services.AddScoped<ICommonService, CommonService>();
+            services.AddScoped(typeof(IService<>), typeof(Service<>));
+
+            // 依賴注入容器區
+            #region ########## DI IRepository ########## 
+            services.AddScoped<IRepository<DemoCode>, Repository<DemoCode>>();
+            #endregion
+
+            // 依賴注入服務區
+            #region ########## DI IRepository ########## 
+            services.AddScoped<IDemoCodeService, DemoCodeService>();
+            #endregion
+
+ 
 
             services.AddRazorPages();
         }
